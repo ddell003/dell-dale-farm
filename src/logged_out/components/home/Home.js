@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import HeadSection from "./HeadSection";
 import FeatureSection from "./FeatureSection";
 import PricingSection from "./PricingSection";
+import About from "./About";
+import Welcome from "./Welcome";
 
 function Home(props) {
   const { selectHome } = props;
@@ -12,6 +14,8 @@ function Home(props) {
   return (
     <Fragment>
       <HeadSection />
+        <Welcome/>
+        <About/>
       <FeatureSection />
       <PricingSection />
     </Fragment>

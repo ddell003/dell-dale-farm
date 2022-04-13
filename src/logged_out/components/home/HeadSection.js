@@ -142,7 +142,7 @@ function HeadSection(props) {
                                 variant={isWidthUpLg ? "h6" : "body1"}
                                 color="textSecondary"
                             >
-                              Dell Dale family own Farm ....... ..... ...
+                                Heritage Polled Shorthorns, Irish Shorthorns, Club Calves
                             </Typography>
                           </Box>
 

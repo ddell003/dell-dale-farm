@@ -5,19 +5,16 @@ import {
   Typography,
   Box,
   IconButton,
-  Hidden,
-  TextField,
 } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail";
 import WaveBorder from "../../../shared/components/WaveBorder";
-import ColoredButton from "../../../shared/components/ColoredButton";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const styles = (theme) => ({
   footerInner: {
-    backgroundColor: theme.palette.common.darkBlack,
+    background: 'linear-gradient(-45deg, #FFA000 30%, #4CAF50 80%);',
     paddingTop: theme.spacing(8),
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
@@ -76,11 +73,11 @@ const styles = (theme) => ({
 const infos = [
   {
     icon: <PhoneIcon />,
-    description: "+1 555 123456",
+    description: "+1 443 3984287",
   },
   {
     icon: <MailIcon />,
-    description: "support@company.com",
+    description: "dellnshorn@hotmail.com",
   },
 ];
 
@@ -158,40 +155,12 @@ function Footer(props) {
   return (
     <footer className="lg-p-top">
       <WaveBorder
-        upperColor="#FFFFFF"
-        lowerColor={theme.palette.common.darkBlack}
+          upperColor={'linear-gradient(189deg, #FFA000 30%, #4CAF50 80%)'}
+          lowerColor="green"
         animationNegativeDelay={4}
       />
       <div className={classes.footerInner}>
         <Grid container spacing={isWidthUpMd ? 10 : 5}>
-          <Grid item xs={12} md={6} lg={4}>
-            <form>
-              <Box display="flex" flexDirection="column">
-                <Box mb={1}>
-                  <TextField
-                    variant="outlined"
-                    multiline
-                    placeholder="Get in touch with us"
-                    InputProps={{
-                      className: classes.whiteBg,
-                      "aria-label": "Get in Touch",
-                    }}
-                    rows={4}
-                    fullWidth
-                    required
-                  />
-                </Box>
-                <ColoredButton
-                  color={theme.palette.common.white}
-                  variant="outlined"
-                  type="submit"
-                >
-                  Send Message
-                </ColoredButton>
-              </Box>
-            </form>
-          </Grid>
-          <Hidden lgDown>
             <Grid item xs={12} md={6} lg={4}>
               <Box display="flex" justifyContent="center">
                 <div>
@@ -221,30 +190,7 @@ function Footer(props) {
                 </div>
               </Box>
             </Grid>
-          </Hidden>
-          <Grid item xs={12} md={6} lg={4}>
-            <Typography variant="h6" paragraph className="text-white">
-              About the Company
-            </Typography>
-            <Typography style={{ color: "#8f9296" }} paragraph>
-              Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
-              euismod convallis velit, eu auctor lacus vehicula sit amet.
-            </Typography>
-            <Box display="flex">
-              {socialIcons.map((socialIcon, index) => (
-                <Box key={index} mr={index !== socialIcons.length - 1 ? 1 : 0}>
-                  <IconButton
-                    aria-label={socialIcon.label}
-                    className={classes.socialIcon}
-                    href={socialIcon.href}
-                    size="large"
-                  >
-                    {socialIcon.icon}
-                  </IconButton>
-                </Box>
-              ))}
-            </Box>
-          </Grid>
+
         </Grid>
       </div>
     </footer>
