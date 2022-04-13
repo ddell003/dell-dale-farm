@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { Grid, Typography, Card, Button, Hidden, Box } from "@mui/material";
+import { Grid, Typography, Card, Hidden, Box } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
 import WaveBorder from "../../../shared/components/WaveBorder";
 import ZoomImage from "../../../shared/components/ZoomImage";
@@ -118,7 +118,7 @@ function HeadSection(props) {
                         <Box mb={4}>
                           <div>
                             <Typography
-                                variant="h1"
+                                variant="h2"
                                 className={classes.brandText}
                                 display="inline"
                                 color="green"
@@ -126,7 +126,7 @@ function HeadSection(props) {
                               Dell-Dale
                             </Typography>
                             <Typography
-                                variant="h1"
+                                variant="h2"
                                 className={classes.brandText}
                                 display="inline"
                                 color="orange"
@@ -149,15 +149,14 @@ function HeadSection(props) {
                         </div>
                       </Box>
                     </Grid>
-                    <Hidden mdDown>
-                      <Grid item md={6} style={{width:"100%", textAlign:"center"}}>
+
+                      <Grid itemxs={12}  md={6} style={{width:"100%", textAlign:"center"}}>
                         <ZoomImage
                             src={`${process.env.PUBLIC_URL}/images/logged_out/farm.png`}
                             className={classes.image}
                             alt="header example"
                         />
                       </Grid>
-                    </Hidden>
                   </Box>
                 </div>
               </Card>
