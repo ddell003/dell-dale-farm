@@ -142,7 +142,8 @@ function HeadSection(props) {
                                 variant={isWidthUpLg ? "h6" : "body1"}
                                 color="textSecondary"
                             >
-                                Heritage Polled Shorthorns, Irish Shorthorns, Club Calves
+                              Knockout Irish and club calves. Have it Native Shorthorns<br></br>
+                              Native since 1978
                             </Typography>
                           </Box>
 

@@ -21,14 +21,17 @@ function Welcome(props) {
     return (
         <div style={{ backgroundColor: "#FFFFFF" }}>
             <div className="container-fluid lg-p-top">
+                <Typography variant="h2" align="center" className="lg-mg-bottom" id="about">
+                    About
+
+                </Typography>
                 <Typography variant="h3" align="center" className="lg-mg-bottom">
                     Welcome to our farm!
-
                 </Typography>
                 <div className="container-fluid">
                     <Grid container spacing={calculateSpacing(width, theme)}>
                         <Typography variant="h5" align="center" className="lg-mg-bottom">
-                           Our 100 cow herd has three distinct cow lines, Native Shorthorns, Irish Shorthorns and Club Calves. Your inquires and visits are always welcomed
+                           Our 35 cow herd has three breeding lines, Dairy Natives, Dairy and Beef Natives and Near Natives. Your inquires and visits are always welcomed
                         </Typography>
                     </Grid>
                 </div>

@@ -1,10 +1,8 @@
 import React, { Fragment, useEffect } from "react";
 import PropTypes from "prop-types";
 import HeadSection from "./HeadSection";
-import FeatureSection from "./FeatureSection";
-import PricingSection from "./PricingSection";
-import About from "./About";
 import Welcome from "./Welcome";
+import HeardSection from "../heard/HeardSection";
 
 function Home(props) {
   const { selectHome } = props;
@@ -13,11 +11,9 @@ function Home(props) {
   }, [selectHome]);
   return (
     <Fragment>
-      <HeadSection />
+        <HeadSection />
         <Welcome/>
-        <About/>
-      <FeatureSection />
-      <PricingSection />
+      <HeardSection />
     </Fragment>
   );
 }

@@ -3,12 +3,14 @@ import PropTypes from "prop-types";
 import { Switch } from "react-router-dom";
 import PropsRoute from "../../shared/components/PropsRoute";
 import Home from "./home/Home";
-import Blog from "./blog/Blog";
 import BlogPost from "./blog/BlogPost";
 import useLocationBlocker from "../../shared/functions/useLocationBlocker";
+import HeardSection from "./heard/HeardSection";
+import Welcome from "./home/Welcome";
+import Footer from "./footer/Footer";
 
 function Routing(props) {
-  const { blogPosts, selectBlog, selectHome } = props;
+  const { blogPosts, selectHome } = props;
   useLocationBlocker();
   return (
     <Switch>
@@ -28,11 +30,11 @@ function Routing(props) {
       ))}
       <PropsRoute
         exact
-        path="/blog"
-        component={Blog}
-        selectBlog={selectBlog}
-        blogPosts={blogPosts}
+        path="/heard"
+        component={HeardSection}
       />
+        <PropsRoute exact path="/about" component={Welcome} />
+        <PropsRoute exact path="/contact" component={Footer} />
       <PropsRoute path="/" component={Home} selectHome={selectHome} />
     </Switch>
   );

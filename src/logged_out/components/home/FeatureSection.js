@@ -101,7 +101,7 @@ function FeatureSection(props) {
     <div style={{ backgroundColor: "#FFFFFF" }}>
       <div className="container-fluid lg-p-top">
         <Typography variant="h3" align="center" className="lg-mg-bottom">
-          Features
+          Heard
         </Typography>
         <div className="container-fluid">
           <Grid container spacing={calculateSpacing(width, theme)}>

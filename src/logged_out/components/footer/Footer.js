@@ -73,7 +73,7 @@ const styles = (theme) => ({
 const infos = [
   {
     icon: <PhoneIcon />,
-    description: "+1 443 3984287",
+    description: "+1 443 398 4287 - Texts receive faster responses",
   },
   {
     icon: <MailIcon />,
