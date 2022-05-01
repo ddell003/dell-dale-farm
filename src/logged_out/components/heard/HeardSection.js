@@ -14,7 +14,7 @@ const cows = [
         snippet: "By Pinesedge Babe Ruth 3rd",
         date: "",
         year: "Spring 2022",
-        pictureUrl: "https://drive.google.com/file/d/1mgRARjvD-6ArOhITEFHFaXXqwazQ98SS/view",
+        pictureUrl: "https://i.imgur.com/93K5Uc8.jpg",
         tags: ["bull", "calves",]
     },
     {
@@ -23,7 +23,7 @@ const cows = [
         snippet: "",
         date: "",
         year: "Spring 2022",
-        pictureUrl: "https://drive.google.com/file/d/1KBlINS0QKORYipgBCQdP386Kz0EDwKey/view",
+        pictureUrl: "https://i.imgur.com/WRqd0GT.jpg",
         tags: ["bull", "calves"]
     },
     {
@@ -32,7 +32,7 @@ const cows = [
         snippet: "",
         date: "",
         year: "Spring 2022",
-        pictureUrl: "https://drive.google.com/file/d/1gun14EQ7ApfHVSVVZl6PbMMkHfxPucU1/view",
+        pictureUrl: "https://i.imgur.com/o1BmvoF.jpg",
         tags: ["heifer", "calves"]
     },
     {
@@ -41,7 +41,7 @@ const cows = [
         snippet: "",
         date: "",
         year: "Spring 2022",
-        pictureUrl: "https://drive.google.com/file/d/12JKU5rrnWa0PO_NTm3sZJ6KqCeggzj5o/view",
+        pictureUrl: "https://i.imgur.com/jfdQ9lj.jpg",
         tags: ["bulls", "calves"]
     },
     {
@@ -50,7 +50,7 @@ const cows = [
         snippet: "",
         date: "",
         year: "Spring 2022",
-        pictureUrl: "https://drive.google.com/file/d/1xxRCB5TpGveLhwGNYZmOJYVBR9gvAM5e/view",
+        pictureUrl: "https://i.imgur.com/hzMRBHI.jpg",
         tags: ["cow",]
     },
     {
@@ -59,7 +59,7 @@ const cows = [
         snippet: "",
         date: "",
         year: "Spring 2022",
-        pictureUrl: "https://drive.google.com/file/d/1WVVTJ-fOk3OJ8zTuT2jDIaRGUYgrZu2_/view",
+        pictureUrl: "https://i.imgur.com/Da69hJ1.jpg",
         tags: ["cow",]
     },
     {
@@ -68,7 +68,7 @@ const cows = [
         snippet: "",
         date: "",
         year: "Spring 2022",
-        pictureUrl: "https://drive.google.com/file/d/1WXfSZnuiMtVfvXyWx917mqqxi2VIRX4K/view",
+        pictureUrl: "https://i.imgur.com/8TsRb27.jpg",
         tags: ["cow",]
     },
     {
@@ -77,7 +77,7 @@ const cows = [
         snippet: "Herdsire By Cantagree Cache Master",
         date: "",
         year: "Spring 2022",
-        pictureUrl: "https://drive.google.com/file/d/1sLnRcn8aRviW_YjWF1FVqIEJxzI2Flr8/view?usp=sharing",
+        pictureUrl: "https://i.imgur.com/xglSKTB.jpg",
         tags: ["bull","Herdsire"]
     },
     {
@@ -86,7 +86,7 @@ const cows = [
         snippet: "Herdsire",
         date: "",
         year: "Spring 2022",
-        pictureUrl: "https://drive.google.com/file/d/1xW3VhQO3-YRCuJ6LH3645_zjUE99CpdW/view",
+        pictureUrl: "https://i.imgur.com/bkm5UC5.jpg",
         tags: ["bull","Herdsire"]
     },
     {
@@ -95,7 +95,7 @@ const cows = [
         snippet: "Near Native Cow",
         date: "",
         year: "Spring 2022",
-        pictureUrl: "https://drive.google.com/file/d/1TM2DsxFr_0V_x9M6hKA2DaH-XbS0uFn7/view",
+        pictureUrl: "https://i.imgur.com/POUzNJ1.jpg",
         tags: ["cow","Native"]
     },
     {
@@ -104,7 +104,7 @@ const cows = [
         snippet: "Near Native Cow",
         date: "",
         year: "Spring 2022",
-        pictureUrl: "https://drive.google.com/file/d/1pnbEXkOeT-Vug9LAQX_EVHQ4D1EKOLJ4/view",
+        pictureUrl: "https://i.imgur.com/MM10TJ3.jpg",
         tags: ["cow","Native"]
     },
     {
@@ -113,7 +113,7 @@ const cows = [
         snippet: "Native Beef Cow",
         date: "",
         year: "Spring 2022",
-        pictureUrl: "https://drive.google.com/file/d/1JC3eTDTI-NBpm7cz8uPj8uJ9_ikFVhXT/view",
+        pictureUrl: "https://i.imgur.com/NXNLmMB.jpg",
         tags: ["cow","Native", "beef"]
     },
 
@@ -135,7 +135,7 @@ function HeardSection(props) {
                         {cows.map((element) => (
                             <Grid
                                 item={true}
-                                xs={6}
+                                xs={12}
                                 md={4}
                                 data-aos="zoom-in-up"
                                 data-aos-delay={isWidthUpMd ? element.mdDelay : element.smDelay}
