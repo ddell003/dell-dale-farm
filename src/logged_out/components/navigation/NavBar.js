@@ -46,8 +46,8 @@ function NavBar(props) {
       icon: <HomeIcon className="text-white" />
     },
     {
-      link: "/heard",
-      name: "Heard",
+      link: "/herd",
+      name: "Herd",
       icon: <BookIcon className="text-white" />
     },
     {

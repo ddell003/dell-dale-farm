@@ -4,7 +4,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { withTheme } from "@mui/styles";
 import useWidth from "../../../shared/functions/useWidth";
 import calculateSpacing from "../home/calculateSpacing";
-import HeardCard from "./HeardCard";
+import HeardCard from "./HerdCard";
 
 
 const cows = [
@@ -82,7 +82,7 @@ const cows = [
     },
     {
         id: "9",
-        title: "Delldale Airline Pete",
+        title: "Airline Pete",
         snippet: "Herdsire",
         date: "",
         year: "Spring 2022",
@@ -119,7 +119,7 @@ const cows = [
 
 ];
 
-function HeardSection(props) {
+function HerdSection(props) {
     const { theme } = props;
     const width = useWidth();
     const isWidthUpMd = useMediaQuery(theme.breakpoints.up("md"));
@@ -128,7 +128,7 @@ function HeardSection(props) {
         <div style={{ backgroundColor: "#FFFFFF" }}>
             <div className="container-fluid lg-p-top">
                 <Typography variant="h3" align="center" className="lg-mg-bottom">
-                    Heard
+                    Herd
                 </Typography>
                 <div className="container-fluid">
                     <Grid container spacing={calculateSpacing(width, theme)}>
@@ -159,6 +159,6 @@ function HeardSection(props) {
     );
 }
 
-HeardSection.propTypes = {};
+HerdSection.propTypes = {};
 
-export default withTheme(HeardSection);
+export default withTheme(HerdSection);

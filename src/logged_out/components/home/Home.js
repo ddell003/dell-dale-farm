@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from "react";
 import PropTypes from "prop-types";
 import HeadSection from "./HeadSection";
 import Welcome from "./Welcome";
-import HeardSection from "../heard/HeardSection";
+import HeardSection from "../herd/HerdSection";
 
 function Home(props) {
   const { selectHome } = props;

@@ -5,7 +5,7 @@ import PropsRoute from "../../shared/components/PropsRoute";
 import Home from "./home/Home";
 import BlogPost from "./blog/BlogPost";
 import useLocationBlocker from "../../shared/functions/useLocationBlocker";
-import HeardSection from "./heard/HeardSection";
+import HeardSection from "./herd/HerdSection";
 import Welcome from "./home/Welcome";
 import Footer from "./footer/Footer";
 
@@ -28,11 +28,7 @@ function Routing(props) {
           )}
         />
       ))}
-      <PropsRoute
-        exact
-        path="/heard"
-        component={HeardSection}
-      />
+      <PropsRoute exact path="/herd" component={HeardSection}/>
         <PropsRoute exact path="/about" component={Welcome} />
         <PropsRoute exact path="/contact" component={Footer} />
       <PropsRoute path="/" component={Home} selectHome={selectHome} />

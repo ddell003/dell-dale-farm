@@ -77,7 +77,7 @@ const infos = [
   },
   {
     icon: <MailIcon />,
-    description: "dellnshorn@hotmail.com",
+    description: "dwdell1865@gmail.com",
   },
 ];
 

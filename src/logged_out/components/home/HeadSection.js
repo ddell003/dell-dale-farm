@@ -142,8 +142,7 @@ function HeadSection(props) {
                                 variant={isWidthUpLg ? "h6" : "body1"}
                                 color="textSecondary"
                             >
-                              Knockout Irish and club calves. Have it Native Shorthorns<br></br>
-                              Native since 1978
+                              Native shorthorns since 1978
                             </Typography>
                           </Box>
 

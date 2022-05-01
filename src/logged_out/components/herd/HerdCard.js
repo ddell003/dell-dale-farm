@@ -78,7 +78,7 @@ const styles = (theme) => ({
     },
 });
 
-function HeardCard(props) {
+function HerdCard(props) {
     const { classes, pictureUrl, title, snippet, tags } = props;
 
     return (
@@ -107,7 +107,7 @@ function HeardCard(props) {
     );
 }
 
-HeardCard.propTypes = {
+HerdCard.propTypes = {
     classes: PropTypes.object.isRequired,
     pictureUrl: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
@@ -116,4 +116,4 @@ HeardCard.propTypes = {
     tags: PropTypes.array.isRequired,
 };
 
-export default withStyles(styles, { withTheme: true })(HeardCard);
+export default withStyles(styles, { withTheme: true })(HerdCard);
